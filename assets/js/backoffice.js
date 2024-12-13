@@ -111,6 +111,7 @@ const deleteFn = function (e) {
     .then(response => response.json())
     .then(deletedItem => {
       alert(deletedItem.name + " has been deleted");
+      window.location.assign("index.html"); 
     })
     .catch((error) => console.log(error));
   }
