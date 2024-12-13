@@ -34,7 +34,7 @@ function createProductCard(product) {
   const productsRow = document.getElementById("productsRow");
   const productsCol = document.createElement("div");
   productsCol.className =
-    "col-12 col-sm-6 col-lg-4 col-xxl-3 d-flex justify-content-center";
+    "col col-sm-6 col-lg-4 col-xxl-3 d-flex justify-content-center";
   productsRow.appendChild(productsCol);
 
   const card = document.createElement("div");
@@ -50,10 +50,10 @@ function createProductCard(product) {
   const cardBody = document.createElement("div");
   cardBody.className = "card-body";
   cardBody.innerHTML = `
-          <p class="mb-0 pName">${product.name}</p>
-          <p class="pBrand">${product.brand}</p>
+          <p class="h5">${product.name}</p>
+          <p class="fw-bold text-black-50">${product.brand}</p>
           <p class="pDescription">${product.description}</p>
-          <p class="mb-3 text-end me-2" style="color: #ABC4E2">Price: ${product.price}€</p>
+          <p class="mb-3 text-end text-primary-emphasis me-2" )">Price: ${product.price}€</p>
           <div><a href="details.html?productId=${product._id}">
             <button class="btn btn-secondary m-2 buttonDetails">Details</button>
           </a></div>
