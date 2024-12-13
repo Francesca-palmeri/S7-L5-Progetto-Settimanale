@@ -34,13 +34,76 @@
         <div class="navbar-nav ms-auto fs-6">
           
           <a class="nav-link text-light pe-4" href="backoffice.html">Backoffice</a>
-          <a class="nav-link text-light pe-4 disabled" href="#">Orders</a>
-          <a class="nav-link text-light pe-4 disabled" href="#">Our story</a>
-          <a class="nav-link text-light pe-4 disabled" href="#">Our team</a>
+          
         </div>
       </div>
     </div>
   </nav>
+  <div class="container">
+    <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 mx-auto mt-5" id="pageMode"></div>
+    </div>
+  <div class="row">
+    <div class="col-12 col-md-10 col-lg-8 mx-auto">
+      <form>
+        <label for="productName" class="form-label mt-3">Product name:</label>
+        <input
+          class="form-control"
+          id="productName"
+          type="text"
+          placeholder="Required field"
+          aria-label="product name"
+          required
+        />
+
+        <label for="productDescription" class="form-label mt-3">Product description:</label>
+        <textarea
+          class="form-control"
+          id="productDescription"
+          rows="3"
+          placeholder="Required field"
+          required
+        ></textarea>
+
+        <label for="productBrand" class="form-label mt-3">Product brand:</label>
+        <input
+          class="form-control"
+          id="productBrand"
+          type="text"
+          placeholder="Required field"
+          aria-label="Product brand"
+          required
+        />
+
+        <label for="productImg" class="form-label mt-3">Image URL:</label>
+        <input
+          class="form-control"
+          id="productImg"
+          type="text"
+          placeholder="Required field"
+          aria-label="Image URL"
+          required
+        />
+
+        <label for="productPrice" class="form-label mt-3">Product price:</label>
+        <input
+          class="form-control"
+          id="productPrice"
+          type="number"
+          placeholder="Required field (numbers only)"
+          aria-label="price"
+          required
+        />
+        <div>
+          <button type="submit" class="btn btn-light" id="submitBtn">Confirm</button>
+        <button type="reset" class="btn btn-warning" id="resetBtn">Reset</button>
+        <button type="button"  class="btn btn-danger" id="deleteBtn">Delete</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
